@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:food_recipe/views/home.dart';
 
 class Splashscreen extends StatelessWidget {
   const Splashscreen({Key? key}) : super(key: key);
