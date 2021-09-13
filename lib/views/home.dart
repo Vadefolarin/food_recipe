@@ -1,9 +1,11 @@
 import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:food_recipe/models/recipe.dart';
 import 'package:food_recipe/models/recipeApi.dart';
 import 'package:food_recipe/views/widgets/recipe_card.dart';
+
+import 'drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,6 +36,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: Container(child: DrawereWidget(),padding: EdgeInsets.only(right: 85),),
         appBar: AppBar(
           //  centerTitle: true,
 
@@ -69,6 +72,7 @@ class _HomePageState extends State<HomePage> {
         //   thumbnailUrl:
         //       "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80",
         // ),
+
         );
   }
 }
