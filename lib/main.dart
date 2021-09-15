@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_recipe/views/authentication_screen/login-screen/login.dart';
 import 'package:food_recipe/views/home.dart';
 import 'package:food_recipe/views/splashScreen.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => Splashscreen(),
         "/HomePage": (content) => HomePage(),
+        "/Login": (context) => Login(),
       },
       title: 'Food Recipe',
       theme: ThemeData(
